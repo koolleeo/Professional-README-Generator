@@ -74,8 +74,13 @@ const questions = [
     },
     {
         type: "input",
-        name: "testing",
+        name: "tests",
         message: "Please provide some testing guidelines, where required",
+    },
+    {
+        type: "input",
+        name: "questions",
+        messages: "Questions/answers of interest relating to your project",
     },
     {
         type: "input",
@@ -88,6 +93,7 @@ const questions = [
         message: "Enter your email address",
       },
 ];
+
 
 // function to write README file
 function writeToFile(fileName, data) {
