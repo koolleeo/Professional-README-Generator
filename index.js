@@ -1,5 +1,6 @@
 const fs = require("fs");
-const path = require('path');
+const util = require("util");
+
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -97,14 +98,29 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+
+    //use util npm package to promisify
+    const writeFileAsync = util.promisify(fs.writeFile);
+
+    //write to file when data ready
+    writeFileAsync(fileName, data);
+
 }
 
 // function to initialize program
 function init() {
 
     //use inquirer package to prompt questions, using spread operator
-    inquirer.prompt([...questions]);
+    inquirer.prompt([...questions])
+    
+    //wait for questions response, then use response to generate Markdown
+    .then(response => generateMarkdown(response))
+
+    //when Markdown generate, write output to file
+    .then(data => writeToFile('README.md', data))
+
 }
 
 // function call to initialize program
-init();
+init()
+;
