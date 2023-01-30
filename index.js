@@ -117,7 +117,7 @@ function init() {
     .then(response => generateMarkdown(response))
 
     //when Markdown generate, write output to file
-    .then(data => writeToFile('README.md', data))
+    .then(data => writeToFile('README-output.md', data))
 
 }
 
