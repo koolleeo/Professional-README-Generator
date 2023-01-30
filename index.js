@@ -96,6 +96,8 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
 
+    //use inquirer package to prompt questions, using spread operator
+    inquirer.prompt([...questions]);
 }
 
 // function call to initialize program
