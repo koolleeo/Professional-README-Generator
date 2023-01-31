@@ -81,7 +81,7 @@ const questions = [
     {
         type: "input",
         name: "questions",
-        messages: "Optional: Any comments regarding contact and project engagement?",
+        message: "Optional: Any comments regarding contact and project engagement?",
     },
     {
         type: "input",
