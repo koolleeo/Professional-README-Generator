@@ -74,7 +74,7 @@ Used https://shields.io/ to create license badges
 
 ## Tests
 
-## Questions
+## Questions?
 
 Contact me by email.
 
