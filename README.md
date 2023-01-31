@@ -74,6 +74,11 @@ Used https://shields.io/ to create license badges
 
 ## Tests
 
+Zip file containing an MP4 video clip of the functioning app:
+
+[Professional-README-Generator - Visual Studio Code 2023-01-31 17-30-24.zip](https://github.com/koolleeo/Professional-README-Generator/files/10549324/Professional-README-Generator.-.Visual.Studio.Code.2023-01-31.17-30-24.zip)
+
+
 ## Questions?
 
 Contact me by email.
