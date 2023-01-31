@@ -1,17 +1,21 @@
+const licenses = require('./licenses');
+
 // function to generate markdown for README
 function generateMarkdown(data) {
     return `
+
+![License](${licenses[data.license].imageURL})
     
 # ${data.title}
 
 ## Table of Contents
 
->[Description](#description)\
->[Installation](#installation)\
->[Usage](#usage)\
->[License](#license)\
->[Contributing](#contributing)\
->[Tests](#tests)\
+>[Description](#description)<br>
+>[Installation](#installation)<br>
+>[Usage](#usage)<br>
+>[License](#license)<br>
+>[Contributing](#contributing)<br>
+>[Tests](#tests)<br>
 >[Questions](#questions)
 
 ## Description
