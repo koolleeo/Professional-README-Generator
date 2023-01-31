@@ -43,7 +43,7 @@ ${data.contributing}
 
 ${data.tests}
 
-## Questions
+## Questions?
 
 ${data.questions}
 
