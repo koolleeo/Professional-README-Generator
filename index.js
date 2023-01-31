@@ -81,7 +81,7 @@ const questions = [
     {
         type: "input",
         name: "questions",
-        messages: "Questions/answers of interest relating to your project",
+        messages: "Optional: Any comments regarding contact and project engagement?",
     },
     {
         type: "input",
@@ -118,6 +118,9 @@ function init() {
 
     //when Markdown generate, write output to file
     .then(data => writeToFile('README-output.md', data))
+
+    //added function to capture error
+    .catch(error => { console.log(`Error : ${error.message}`)})
 
 }
 
