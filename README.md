@@ -70,6 +70,8 @@ This project uses the following license : MIT
 
 This is curently a read only project
 
+Used https://shields.io/ to create license badges
+
 ## Tests
 
 ## Questions
